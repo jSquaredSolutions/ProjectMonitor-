@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jSquaredSolutions/ProjectMonitor-#readme",
   "dependencies": {
+    "csv-writer": "^1.2.0",
     "iohook": "^0.4.2",
     "statman-stopwatch": "^2.8.2",
     "timer-machine": "^1.1.0"
