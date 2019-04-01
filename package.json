@@ -1,0 +1,24 @@
+{
+  "name": "projectmonitor-",
+  "version": "1.0.0",
+  "description": "ProjectMonitor",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jSquaredSolutions/ProjectMonitor-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jSquaredSolutions/ProjectMonitor-/issues"
+  },
+  "homepage": "https://github.com/jSquaredSolutions/ProjectMonitor-#readme",
+  "dependencies": {
+    "iohook": "^0.4.2",
+    "statman-stopwatch": "^2.8.2",
+    "timer-machine": "^1.1.0"
+  }
+}
