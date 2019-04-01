@@ -13,8 +13,6 @@ setInterval(function(){
       console.log("Activity stopped: "+myTimer.time());
       myTimer.stop();
    };
-   console.log(": Reset");
-   console.log(": stopW");
 }, 3000);
 
 setInterval(function(){
