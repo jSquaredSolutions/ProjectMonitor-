@@ -1,10 +1,13 @@
+// vscode-fold=#
 'use strict';
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const ioHook = require('iohook');
 const Timer = require('timer-machine');
+const screenshot = require('screenshot-desktop');
+
 const myTimer = new Timer();
 myTimer.start();
 const timeScale = [];
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
    path: 'out.csv',
    header: [
@@ -21,12 +24,13 @@ setInterval(function () {
    csvWriter
       .writeRecords(data)
       .then(() => console.log('The CSV file was written successfully'));
-}, 60000);
+}, 600000); // 10 minutes log time in case the app stops
 
-setInterval(function () {
+setInterval(function () { // check activity every three seconds
    if (timeScale.length > 0) {
-      console.log("Activeity continues time: " + myTimer.time())
+      console.log("Activity continues time: " + myTimer.time())
       myTimer.start();
+      screenshot({filename:'/Users/Jsquared/Desktop/ProjectMonitor-/SS/'+Date.now()+'.png'});
    } else {
       console.log("Activity stopped: " + myTimer.time());
       myTimer.stop();
