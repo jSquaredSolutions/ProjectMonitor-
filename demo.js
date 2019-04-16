@@ -11,14 +11,16 @@ const timeScale = [];
 const csvWriter = createCsvWriter({
    path: 'out.csv',
    header: [
-      { id: 'time', title: 'Time' }
+      { id: 'time', title: 'Time' },
+      { id: 'date', title: 'Date' }
    ]
 });
 
 setInterval(function () {
    const data = [
       {
-         time: myTimer.time()
+         time: myTimer.time(),
+         date: Date.now()
       }
    ];
    csvWriter
@@ -30,7 +32,7 @@ setInterval(function () { // check activity every three seconds
    if (timeScale.length > 0) {
       console.log("Activity continues time: " + myTimer.time())
       myTimer.start();
-      screenshot({filename:'/Users/Jsquared/Desktop/ProjectMonitor-/SS/'+Date.now()+'.png'});
+      screenshot({filename:'SS/'+Date.now()+'.png'});
    } else {
       console.log("Activity stopped: " + myTimer.time());
       myTimer.stop();
