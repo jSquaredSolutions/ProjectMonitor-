@@ -1,38 +1,29 @@
 // vscode-fold=#
 'use strict';
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+var fs = require('fs');
 const ioHook = require('iohook');
 const Timer = require('timer-machine');
 const screenshot = require('screenshot-desktop');
+var fileName = './time.json';
+var file = require(fileName);
 
 const myTimer = new Timer();
 myTimer.start();
 const timeScale = [];
-const csvWriter = createCsvWriter({
-   path: 'out.csv',
-   header: [
-      { id: 'time', title: 'Time' },
-      { id: 'date', title: 'Date' }
-   ]
-});
 
 setInterval(function () {
-   const data = [
-      {
-         time: myTimer.time(),
-         date: Date.now()
-      }
-   ];
-   csvWriter
-      .writeRecords(data)
-      .then(() => console.log('The CSV file was written successfully'));
-}, 600000); // 10 minutes log time in case the app stops
+}, 30000);
 
 setInterval(function () { // check activity every three seconds
    if (timeScale.length > 0) {
       console.log("Activity continues time: " + myTimer.time())
       myTimer.start();
       screenshot({filename:'SS/'+Date.now()+'.png'});
+      file.time.push(3000);
+file.date.push(Date.now());
+fs.writeFile(fileName, JSON.stringify(file), function (err) {
+   if (err) return console.log(err);
+});
    } else {
       console.log("Activity stopped: " + myTimer.time());
       myTimer.stop();
