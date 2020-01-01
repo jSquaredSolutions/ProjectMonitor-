@@ -1,0 +1,27 @@
+{
+  "name": "projectmonitor-",
+  "version": "1.0.0",
+  "description": "Keeps track of time",
+  "main": "demo.js",
+  "scripts": {
+    "test": "node demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jSquaredSolutions/ProjectMonitor-.git"
+  },
+  "keywords": [
+    "time"
+  ],
+  "dependencies": {
+      "screenshot-desktop": "1.10.0",
+      "timer-machine": "1.1.0",
+      "iohook": "0.6.2"
+    },
+  "author": "Jeffrey McFarland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jSquaredSolutions/ProjectMonitor-/issues"
+  },
+  "homepage": "https://github.com/jSquaredSolutions/ProjectMonitor-#readme"
+}

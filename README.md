@@ -10,3 +10,7 @@ Added .gitignore /SS
 
 Create a SS folder after you clone the project if you want screenshots. 
 
+In some systems I need to run this command via PS as admin:
+
+PowerShell -Command "Set-ExecutionPolicy Unrestricted"
+
