@@ -32,7 +32,7 @@ fs.writeFile(fileName, JSON.stringify(file), function (err) {
 
 setInterval(function () {
    timeScale.length = 0;
-}, 30000);
+}, 60000);
 
 ioHook.on("mousemove", event => {
    timeScale.push('1');

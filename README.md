@@ -14,3 +14,7 @@ In some systems I need to run this command via PS as admin:
 
 PowerShell -Command "Set-ExecutionPolicy Unrestricted"
 
+1/08/2020
+
+When trying to run this project on other PCs, somethings the iohook does not work because C++ needs to be installed. I installed C++ via VS community
+
