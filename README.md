@@ -18,3 +18,10 @@ PowerShell -Command "Set-ExecutionPolicy Unrestricted"
 
 When trying to run this project on other PCs, somethings the iohook does not work because C++ needs to be installed. I installed C++ via VS community
 
+Create a file named time.json and add this:
+
+{
+    "time":[],
+    "date":[]
+}
+
