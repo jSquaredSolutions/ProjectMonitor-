@@ -1,1 +1,6 @@
 /node_modules
+*.zip
+/SS
+/time.json
+time.json
+*time.json
