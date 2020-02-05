@@ -25,3 +25,8 @@ Create a file named time.json and add this:
     "date":[]
 }
 
+If you are saving to a shared drive use something like this:
+
+//DESKTOP-TE5OBU7/ScreenShots/
+
+run "npm install" 

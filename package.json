@@ -13,15 +13,16 @@
   "keywords": [
     "time"
   ],
-  "dependencies": {
-      "screenshot-desktop": "1.10.0",
-      "timer-machine": "1.1.0",
-      "iohook": "0.6.2"
-    },
+  "dependencies": {},
   "author": "Jeffrey McFarland",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jSquaredSolutions/ProjectMonitor-/issues"
   },
-  "homepage": "https://github.com/jSquaredSolutions/ProjectMonitor-#readme"
+  "homepage": "https://github.com/jSquaredSolutions/ProjectMonitor-#readme",
+  "devDependencies": {
+    "iohook": "^0.6.2",
+    "screenshot-desktop": "^1.10.0",
+    "timer-machine": "^1.1.0"
+  }
 }
