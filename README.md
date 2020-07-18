@@ -30,3 +30,10 @@ If you are saving to a shared drive use something like this:
 //DESKTOP-TE5OBU7/ScreenShots/
 
 run "npm install" 
+
+07/18/2020
+
+Issue: ProjectMonitor- stopped working on my VM's. One this I noticed was discovery mode was turned off. I turned it on, but that did not fix the problem.
+Check to see if password is required for file share
+
+![Password ON/OFF](PassONOFF.png)

@@ -18,7 +18,7 @@ setInterval(function () { // check activity every three seconds
    if (timeScale.length > 0) {
       console.log("Activity continues time: " + myTimer.time())
       myTimer.start();
-      screenshot({filename:'//DESKTOP-TE5OBU7/ScreenShots/'+Date.now()+'.png'});
+      screenshot({filename:'//DESKTOP-834UF98/ScreenShots/'+Date.now()+'.png'});
       file.time.push(3000);
 file.date.push(Date.now());
 fs.writeFile(fileName, JSON.stringify(file), function (err) {
